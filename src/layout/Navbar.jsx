@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Switch} from "@nextui-org/react";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 
@@ -10,6 +10,8 @@ import styles from "./Navbar.module.css";
 export default function Topbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [theme, setTheme] = useState(false)
+
+      redirect("/home")
 
 
   useEffect(() =>{
