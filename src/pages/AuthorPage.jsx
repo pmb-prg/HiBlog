@@ -6,9 +6,14 @@ import sanitizeHtml from 'sanitize-html';
 import styles from './AuthorPage.module.css';
 import { Divider } from '@nextui-org/react';
 import CardEl from '../shared/CardEl';
+import { useEffect } from 'react';
 
 function AuthorPage() {
     let {slug} = useParams();
+
+    useEffect(() => {
+      window.scrollTo({top: 0, behavior: "smooth"})
+    },[])
 
     const {loading, data, error} = useQuery(GET_AUTHOR_INFO, {variables: {slug}})
     if (loading)  return <AuthorPageSkeleton />

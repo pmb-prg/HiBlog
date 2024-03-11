@@ -4,13 +4,17 @@ import styles from  './Home.module.css'
 import { GET_BLOGS_INFO } from '../graphql/queriess';
 import { useQuery } from '@apollo/client';
 import Banner from '../components/Banner';
-
+import { useEffect } from 'react';
 
 
 
 function Home() {
   const {error} = useQuery(GET_BLOGS_INFO)
   console.log(error)
+
+  useEffect(() => {
+    window.scrollTo({top: 0, behavior: "smooth"})
+  },[])
 
   if(error) return <div className={styles.errorPage}>
     <h1 >Connect to <span className=' text-sky-500'>VPN</span> and then refresh the page</h1>

@@ -30,6 +30,9 @@ function WriteComment({slug}) {
   useEffect(() => {
     if(data) {
       toast.success('Your Comment sent. Please Wait for its Confirmation !');
+      setName("")
+      setEmail("")
+      setText("")
     }
   },[data])
 

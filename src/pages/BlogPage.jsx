@@ -12,6 +12,12 @@ import { useEffect, useState } from "react";
 function BlogPage() {
     const [scroll, setScroll] = useState(false)
 
+
+    useEffect(() => {
+        window.scrollTo({top: 0, behavior: "smooth"})
+      },[])
+
+      
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if (window.scrollY > 0){

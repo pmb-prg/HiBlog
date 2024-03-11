@@ -33,7 +33,7 @@ function Footer() {
         <Divider orientation="vertical" className="hidden sm:block" />
         <Divider className="sm:hidden" />
         <div className={styles.element}>
-            <p>pmbpg@yahoocom</p>
+            <p>pmbpg@yahoo.com</p>
             <p>Created With ❤️ By PMBPG</p>
         </div>
         <p onClick={goToTopHandler} className=" absolute text-3xl border-2 rounded-full p-6 top-[-25px] left-3 cursor-pointer"><IoIosArrowDropupCircle /></p>
