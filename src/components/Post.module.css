@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+    @apply sm:col-span-2 col-span-3 grid grid-cols-2 gap-4 p-6
+}
+
+.postsHead{
+    @apply  border-b-2 py-2  col-span-2  text-xl font-bold
+    mb-3
+}
+:global(.dark) .postsHead{
+    @apply text-white
+}
+
+
+/* .linkBtn{
+    @apply bg-indigo-600 px-3 py-1 rounded-lg text-white
+} */

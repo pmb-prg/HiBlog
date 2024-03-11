@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply h-72 dark:bg-black w-svw border-t-2 flex flex-col sm:flex-row items-center justify-evenly py-3 relative mt-5
+}
+
+.element{
+    @apply h-full flex flex-col justify-evenly
+}

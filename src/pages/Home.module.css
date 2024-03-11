@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+    @apply grid grid-cols-1 lg:grid-cols-3 justify-items-center
+}
+.homeHeader{
+        @apply bg-cyan-200 m-8 h-48 rounded-md flex flex-col justify-center items-center relative lg:col-span-3 w-11/12 
+}
+:global(.dark) .homeHeader {
+    @apply bg-neutral-800
+}
+.errorPage{
+    @apply h-[90vh] flex flex-col items-center justify-center p-6
+}
+.errorPage h1{
+    @apply text-xl md:text-3xl
+}
+.errorPage p{
+    font-size: 50px;
+    @apply animate-bounce mt-4
+}
+
+/* bg-cyan-200 dark:bg-neutral-900 m-8 w-50 h-48 rounded-md flex flex-col justify-center items-center relative lg:col-span-3 */

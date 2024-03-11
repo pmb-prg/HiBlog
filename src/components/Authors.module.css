@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.container {
+    @apply  grid grid-cols-2 gap-4 p-6 lg:grid-cols-1 lg:h-90   rounded-2xl lg:mr-5 w-96 col-span-3 lg:col-span-1 
+}
+.head{
+    @apply col-span-2 lg:col-span-1 text-center py-2 text-xl font-bold
+    border-b-2 mb-3
+}
+:global(.dark) .head{
+    @apply text-white
+}
+
+/* .authorCard {
+    @apply   flex flex-col items-center justify-evenly h-44 rounded-xl lg:flex-row lg:h-14 lg:w-full lg:rounded-none lg:pb-5
+} */

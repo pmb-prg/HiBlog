@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+.container {
+    @apply flex flex-col items-center
+}
+.containerLoading{
+    @apply flex h-dvh justify-center items-center
+}
+.blogPhotoBlur{
+    @apply  w-4/5 my-6 lg:w-2/5 rounded-xl blur-2xl transition-all
+}
+.blogPhoto {
+    @apply  w-4/5 my-6 lg:w-2/5 rounded-xl transition-all
+}
+.avatorContent{
+    @apply flex items-center w-4/5
+}
+.authorName{
+    @apply text-xl font-bold 
+}
+.avatorInfo{
+    @apply ml-4
+}
+.blogContentStyles h4{
+    @apply text-lg 
+}
+.blogContentStyles p{
+    @apply leading-10
+}

@@ -1,0 +1,31 @@
+.postCard{
+    @apply col-span-2 sm:col-span-1 border-4 border-neutral-200 rounded-3xl relative py-4 
+}
+:global(.dark) .postCard{
+    @apply border-neutral-700
+}
+
+.cardHeader{
+    @apply  z-10 flex-col items-start bg-white border-b-1 border-zinc-100/50 absolute
+}
+
+.cardImg{
+    @apply object-cover rounded-xl w-fit mb-12 h-36
+}
+.cardFooter{
+    @apply absolute bg-neutral-200 bottom-0 border-t-1 border-zinc-100/50 flex items-center  
+}
+:global(.dark) .cardFooter{
+    @apply bg-neutral-700
+}
+
+.cardBody{
+    @apply overflow-visible py-2 flex items-center justify-center
+}
+.profile{
+    @apply flex items-center w-4/5
+    mb-3
+}
+.link {
+    @apply py-2 px-3 bg-blue-600 font-bold rounded-md shadow-sm text-white
+}
