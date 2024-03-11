@@ -44,7 +44,7 @@ export default function Topbar() {
           <p className="font-bold text-inherit text-2xl"><span className=" text-sky-500">Hi</span>Blog</p>
         </NavbarBrand>
         <NavbarItem className={styles.items}>
-          <Link color="foreground" to="/home">
+          <Link color="foreground" to="/">
             Home
           </Link>
         </NavbarItem>
