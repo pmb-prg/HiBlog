@@ -1,5 +1,5 @@
 .postCard{
-    @apply col-span-2 sm:col-span-1 border-4 border-neutral-200 rounded-3xl relative py-4 
+    @apply col-span-2 sm:col-span-1 border-4 border-neutral-200 rounded-3xl relative py-4   animate-[showCard_1s_ease_forwards] 
 }
 :global(.dark) .postCard{
     @apply border-neutral-700

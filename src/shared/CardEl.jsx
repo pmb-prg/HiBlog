@@ -4,9 +4,7 @@ import styles from './CardEl.module.css'
 
 function CardEl({author, title, coverPhoto, id, slug}) {
 
-    const idHandler = () => {
-        console.log(id, slug)
-    }
+
   return (
     <Card className={styles.postCard}>
       <CardHeader className="pb-0 px-6 pt-0 flex-col items-start">

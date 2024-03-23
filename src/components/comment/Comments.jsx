@@ -6,7 +6,6 @@ import { useState } from "react"
 function Comments({slug}) {
 
     const [showAll, setShowAll] = useState(false);
-
     const {loading, data, error} = useQuery(GET_POST_COMMENTS, {variables: {slug}})
 
     const showCommentsHandler = () => {
@@ -19,7 +18,7 @@ function Comments({slug}) {
         <Divider className=" my-5" />
 
         {data && showAll && data.comments.map((com) => 
-        <Card className=" p-6 my-5" key={com.id}>
+        <Card className=" p-6 my-5 animate-[showCard_1s_ease_forwards]" key={com.id}>
             <div className=" flex items-center">
                 <Avatar isBordered size="lg" name={com.name} />
                 <h3 className=" text-xl ml-5">{com.name}</h3>
@@ -30,7 +29,7 @@ function Comments({slug}) {
         </Card>)}
 
         {data && !showAll && data.comments.slice(0, 3).map((com) => 
-        <Card className=" p-6 my-5" key={com.id}>
+        <Card className=" p-6 my-5 animate-[showCard_1s_ease_forwards]" key={com.id}>
             <div className=" flex items-center">
                 <Avatar isBordered size="lg" name={com.name} />
                 <h3 className=" text-xl ml-5">{com.name}</h3>

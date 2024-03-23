@@ -4,8 +4,10 @@
 
 
 .container{
-    @apply sm:col-span-2 col-span-3 grid grid-cols-2 gap-4 p-6
+    @apply sm:col-span-2 col-span-3 grid grid-cols-2 gap-4 p-6 
 }
+
+
 
 .postsHead{
     @apply  border-b-2 py-2  col-span-2  text-xl font-bold
